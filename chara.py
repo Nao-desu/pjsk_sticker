@@ -17,5 +17,5 @@ def check_chara(name:str) -> str:
 def check_name(name:str) -> dict:
     for i in characters:
         if i["name"] == name:
-            return name
+            return i
     return False
