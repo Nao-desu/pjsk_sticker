@@ -9,10 +9,14 @@ PLUGIN_PATH = os.path.dirname(__file__)
 sv_help = '''
 pisk贴纸：pjsk角色贴纸生成器
 指令：
-[pss 角色名 贴纸编号 任意文本]生成贴纸,角色名支持昵称
-[pss角色 角色名]查看角色贴纸预览
-[pss别名 角色编号]查看角色别名
-[pss列表]查看所有角色
+1、pss [角色名] [贴纸编号] [任意文本]
+示例：pss 1 1 测试文本
+2、pss别名 [角色名]
+示例：pss别名 1
+3、pss角色 [角色名]
+示例：pss角色 ena
+4、pss列表
+示例：pss列表
 '''
 sv=Service('pjsk贴纸',enable_on_default=True, help_=sv_help)
 
