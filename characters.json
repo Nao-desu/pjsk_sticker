@@ -1,5 +1,19 @@
 [
     {
+        "id": "2",
+        "name": "Airi 18",
+        "character": "airi",
+        "img": "airi/Airi_18.png",
+        "color": "#FB8AAC",
+        "defaultText": {
+            "text": "keep up",
+            "x": 148,
+            "y": 58,
+            "r": -2,
+            "s": 47
+        }
+    },
+    {
         "id": "3",
         "name": "Airi 01",
         "character": "airi",
@@ -158,6 +172,20 @@
         "name": "Airi 14",
         "character": "airi",
         "img": "airi/Airi_14.png",
+        "color": "#FB8AAC",
+        "defaultText": {
+            "text": "something",
+            "x": 148,
+            "y": 58,
+            "r": -2,
+            "s": 47
+        }
+    },
+    {
+        "id": "17",
+        "name": "Airi 17",
+        "character": "airi",
+        "img": "airi/Airi_17.png",
         "color": "#FB8AAC",
         "defaultText": {
             "text": "something",
@@ -896,7 +924,7 @@
         }
     },
     {
-        "id": "81",
+        "id": "80",
         "name": "Ena 16",
         "character": "ena",
         "img": "ena/Ena_16.png",
@@ -910,7 +938,49 @@
         }
     },
     {
-        "id":"81",
+        "id": "81",
+        "name": "Ena 17",
+        "character": "ena",
+        "img": "ena/Ena_17.png",
+        "color": "#B18F6C",
+        "defaultText": {
+            "text": "something",
+            "x": 148,
+            "y": 58,
+            "r": -2,
+            "s": 47
+        }
+    },
+    {
+        "id": "1000",
+        "name": "Ena 18",
+        "character": "ena",
+        "img": "ena/Ena_18.png",
+        "color": "#B18F6C",
+        "defaultText": {
+            "text": "something",
+            "x": 148,
+            "y": 58,
+            "r": -2,
+            "s": 47
+        }
+    },
+    {
+        "id": "1001",
+        "name": "Ena 19",
+        "character": "ena",
+        "img": "ena/Ena_19.png",
+        "color": "#B18F6C",
+        "defaultText": {
+            "text": "something",
+            "x": 148,
+            "y": 58,
+            "r": -2,
+            "s": 47
+        }
+    },
+    {
+        "id":"1002",
         "name": "Haruka 01",
         "character": "Haruka",
         "img": "Haruka/Haruka_01.png",
