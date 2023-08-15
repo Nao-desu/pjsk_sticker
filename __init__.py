@@ -1,5 +1,5 @@
+import asyncio
 import random
-import time
 from hoshino import Service,logger
 from hoshino.typing import CQEvent
 from hoshino.util import filt_message
@@ -71,7 +71,7 @@ async def random_stick(bot, ev: CQEvent):
             chara_id = f"0{str(chara_id)}" if 0<chara_id<=9 else str(chara_id)
             if chara_name := await check_chara(f"{chara}"):
                 name = f'{chara_name} {chara_id}'
-                time.sleep(3)
+                await asyncio.sleep(1)
                 if await check_name(name):
                     break
             else:
