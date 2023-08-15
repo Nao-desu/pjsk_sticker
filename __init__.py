@@ -19,6 +19,8 @@ pjsk贴纸：pjsk角色贴纸生成器
 示例：pss角色 ena
 4、pss列表
 示例：pss列表
+5、随机 [任意文本]
+示例：随机 测试文本
 '''
 sv=Service('pjsk贴纸',enable_on_default=True, help_=sv_help)
 
