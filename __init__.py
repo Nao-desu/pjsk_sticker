@@ -29,8 +29,8 @@ async def sitcker_preview(bot, ev: CQEvent):
     try:
         chara = ev.message.extract_plain_text().strip()
         if name := await check_chara(chara):
-            filepath = os.path.join(PLUGIN_PATH,f'img\\info\\{name}.png')
-            msg = f'[CQ:image,file=file:///{os.path.abspath(filepath)}]'
+            filepath = os.path.join(PLUGIN_PATH,f'img/info/{name}.png')
+            msg = f'[CQ:image,file=file:{os.path.abspath(filepath)}]'
             await bot.send(ev,msg)
         else:
             await bot.send(ev,f'角色{chara}不存在!')
@@ -42,8 +42,8 @@ async def sitcker_preview(bot, ev: CQEvent):
 @sv.on_fullmatch('pss列表')
 async def characters_preview(bot, ev: CQEvent):
     try:
-        filepath = os.path.join(PLUGIN_PATH,f'img\\allchara.png')
-        msg = f'[CQ:image,file=file:///{os.path.abspath(filepath)}]'
+        filepath = os.path.join(PLUGIN_PATH,f'img/allchara.png')
+        msg = f'[CQ:image,file=file:{os.path.abspath(filepath)}]'
         await bot.send(ev,msg)
     except Exception as e:
         logger.error(e)
