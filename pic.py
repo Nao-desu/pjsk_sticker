@@ -50,11 +50,11 @@ async def stickmaker(image, x: int, y: int, text: str, angle: int, size: int, fi
         size -= 3
         angle -= 3
         if await contain_jepanese(text):
-            font = ImageFont.truetype(join(PIC_PATH, r'fronts\stick.ttf'), size)
+            font = ImageFont.truetype(join(PIC_PATH, 'fronts','stick.ttf'), size)
         elif await contain_chinese(text):
-            font = ImageFont.truetype(join(PIC_PATH, r'fronts\stick2.ttf'), size)
+            font = ImageFont.truetype(join(PIC_PATH, 'fronts','stick2.ttf'), size)
         else:
-            font = ImageFont.truetype(join(PIC_PATH, r'fronts\stick.ttf'), size)
+            font = ImageFont.truetype(join(PIC_PATH, 'fronts','stick.ttf'), size)
         none_img = Image.new("RGBA", (500, 500), (255, 255, 255, 0))
         m1 = 250 - int(image.size[0] / 2)
         n1 = 250 - int(image.size[1] / 2)
