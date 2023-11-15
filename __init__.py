@@ -51,6 +51,8 @@ def get_configs(gid: str = False) -> Union[bool, dict]:
     if gid:
         if gid not in configs:
             configs[gid] = True
+            with open(config_path, "w", encoding="utf-8") as f:
+                f.write(json.dumps(configs, indent=2, ensure_ascii=False))
         return configs[gid]
     else:
         return configs
