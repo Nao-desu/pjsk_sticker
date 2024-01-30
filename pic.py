@@ -72,7 +72,10 @@ async def stickmaker(image, x: int, y: int, text: str, angle: int, size: int, fi
 
         lines = text.split("\n")
         for i, line in enumerate(lines):
-            width, _ = ImageDraw.Draw(text_img).textsize(line, font=font)
+            try:
+                width, _ = ImageDraw.Draw(text_img).textsize(line, font=font)
+            except:
+                width = ImageDraw.Draw(text_img).textlength(line, font=font)
             text_x = (a1 - width) / 2
             text_y = int(b1 / 2) - 2 * border + (i - (len(lines) - 1) / 2) * (size + space)
 
